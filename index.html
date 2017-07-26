@@ -24,6 +24,17 @@
   <body>
      <!-- Header -->
   <header>
+  <div class="container-fluid">
+  			<div class="row">
+  			 <nav>
+	  			<ul>
+	  				<li><a href="#animacion">Locales</a></li>
+	  				<li><a href="#comida">Comidas</a></li>
+	  				<li><a href="#bebida">Bebidas</a></li>
+	  			</ul>
+	  		 </nav>
+  		     </div>	
+  </div>
   <div class="container">
              <div class="row">
                     <div class="page-header text-center header">
@@ -36,10 +47,9 @@
             </div>
   </div>
   </header>
-  <div class="container">
-       
+  <div class="container-fluid">
 
-        <div class="row animacion">
+        <div class="row animacion" id="animacion">
         <div id="myCarousel" class="carousel slide local" data-ride="carousel">
 
          <!-- Indicators -->
@@ -55,15 +65,13 @@
             <img src="images/background.jpg" alt="local">
             <div class="carousel-caption fruta">
               <div class="row rabbit"> 
-                 <h2>Go down the Rabbit Hole!</h2>
+                
               </div>
-              <h3>Locales:</h3>
-              <p>San Telmo</p>
             </div>
           </div>
 
           <div class="item">
-            <img src="images/background2.jpg" alt="Flower">
+            <img src="images/background2.jpg" alt="locales">
             <!--<div class="carousel-caption fruta">
               <h3>Locales:</h3>
               <p>Palermo</p>
@@ -84,7 +92,7 @@
       </div>
 </div>
 </div>
-<div class="container">
+<div class="container-fluid">
         <!--<div class="row locales">          
           <div class="col xs-12 col-sm-12 col-md-12"> 
            
@@ -101,18 +109,21 @@
             </div>
           </div>
         </div>-->
+         <div class="row carta">
+            <div class="col-xs-12 col-sm-12 col-md-12 derecha eat" id="comida">
+                <img src="images/eatmevector.png">
+                <h2>Eat Me <!--<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>--></h2>
+                <p>Nuestra carta de comidas</p>
+            </div> <!-- cierra la col grande -->
+        </div> <!-- cierra row -->
         <div class="row carta">
-            <div class="col-xs-12 col-sm-6 col-md-6 izquierda drink">
-                 <img src="images/drinkme.png">
+            <div class="col-xs-12 col-sm-12 col-md-12 izquierda drink" id="bebida">
+                 <img src="images/drinkmeblue.png">
                  <h2><!--<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>--> Drink Me</h2>
                  <p>Nuestra carta de bebidas</p>
              </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 derecha eat">
-                <img src="images/eatme.png">
-                <h2>Eat Me <!--<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>--></h2>
-                <p>Nuestra carta de comidas</p>
-            </div>
         </div>
+       
       </div>
 </div>
       <div class="row">

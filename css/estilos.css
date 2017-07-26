@@ -21,19 +21,24 @@ h1:hover {
 }
 
 .title h2 {
-	color: #d7d7d7;
+	color: #F7CAC9;
 	font-size: 18px;
 	text-align: center;
 	margin-top: -0,8%;
-	font-family: 'helvetica';
+	font-family: 'helvetica'; 
 }
 
 header {
 	background-color: #151515;
 	background-image: url("../images/vintage4.jpg"); 
 	background-size: cover; 
+	height: 450px;
 }
 
+.header {
+	height: 325px;
+
+}
 
 .carta h2 {
 	color: #151515;  
@@ -45,7 +50,10 @@ header {
 
 .carta h2, h3 {
 	width: 100%; 
-	z-index: 4; 
+}
+
+.carta h3 {
+	font-style: italic; 
 }
 
 
@@ -57,7 +65,6 @@ p {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;  
-	height: 150px;
 	margin-top:1%;
 	margin-bottom: 1%;
 
@@ -73,8 +80,12 @@ p {
 	/*height: 300px;*/	
 }
 
+
+
 .drink{  
-	border-radius: 20px 0px 0px 20px;
+	border-radius: 20px 20px 20px 20px;
+	margin: 5px;
+	z-index: 0; 
 	
 	/*border: 3px solid transparent;
     -moz-border-image: -moz-linear-gradient(left, cyan 0%, grey 100%);
@@ -84,7 +95,9 @@ p {
 }
 
 .eat{
-	border-radius: 0px 20px 20px 0px;
+	border-radius: 20px 20px 20px 20px;
+	margin: 5px;
+	z-index: 0; 
 }
 
 /*	border: 2px dotted #3f3f3f;
@@ -104,52 +117,49 @@ p {
     -webkit-background-size:100px 101px; 
     background-position:0 0, 50px 0, 50px -50px, 0px 50px;*/
 
-.drink img {
+/*.drink img {
 	border-radius: 100%;
-	display: none;
 	height: 230px;
 	width: auto;
 	border: solid 1px #3f3f3f;
 	position: absolute;
-}
+}*/
 
-.eat img {
-	border-radius: 100%;
-	display: none;
-	height: 230px;
+.eat img, .drink img {
+	height: 200px;
 	width: auto; 
-	border: solid 1px #3f3f3f;
-	position: absolute;
+	margin-top: 10px;
 }
 
-.drink:hover, .eat:hover {	
+/*.drink:hover, .eat:hover {	
 	height: 250px;
 	z-index: 2; 
 	background-color: rgba(247, 202, 201, 1.0);/*
 	background-image: url('../images/marco3.png'); 
 	background-repeat: no-repeat;
 	background-position: center; 
-	background-size: auto 340px;*/
+	background-size: auto 340px;
 }
 
 
 .drink:hover img, .eat:hover img {
 	display: block;
 
-}
+}*/
 
 .eat h2, .drink h2 { 
 	text-align: center; 
 }
 
-.drink:hover h2, .eat:hover h2 {
+
+/*.drink:hover h2, .eat:hover h2 {
 	display: none;
 }
 
 .drink:hover p, .eat:hover p {
 	display: none;
 }
-
+*/
 .drink p, .eat p {
 	width: 100%;
 	text-align: center;
@@ -159,9 +169,10 @@ p {
 }
 
 header img {
-	width: 10%;
+	width: 12%;
 	height: auto;
 	margin-bottom: -1%;
+	margin-top: 0.5%;
 }
 
 
@@ -310,4 +321,33 @@ header img {
 	color:  #89ABE3;
 	font-family: 'Dancing Script';
 	height: 40%;
+}
+
+nav {
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+	height: 50px;
+	color: white;
+	list-style-type: none; 
+	width: 100%; 
+	background-color: black; 
+	flex-direction: row; 
+	align-items: center; 
+}
+
+ul li a{
+	text-decoration: none; 
+	color: grey;
+	font-family: 'helvetica';
+	font-size: 16px;
+}
+
+ul li a:hover {
+	color: #89ABE3;
+	text-decoration: none; 
+	font-size: 20px;
 }
